@@ -1,0 +1,966 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./../css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./../css/style.css" />
+    <link rel="stylesheet" href="./../css/media.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="main">
+          <div class="logo">
+            <a href="#hero"
+              ><span class="title">The UX </span
+              ><span class="title orange">Review</span></a
+            >
+          </div>
+          <a
+            class="menu-toggle brutal-shadow-xs brutal-border-sm xl:hidden"
+            href=""
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+              <path
+                d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"
+              />
+            </svg>
+          </a>
+          <nav class="hidden xl:block">
+            <ul class="flex">
+              <li>
+                <a href="#hero">HOME</a>
+                <svg
+                  class="svg-inline--fa fa-star"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="star"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  ></path></svg
+                ><!-- <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i> Font Awesome fontawesome.com -->
+              </li>
+
+              <li>
+                <a href="#latestArticles">LATEST ARTICLES</a>
+                <svg
+                  class="svg-inline--fa fa-star"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="star"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  ></path></svg
+                ><!-- <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i> Font Awesome fontawesome.com -->
+              </li>
+
+              <li>
+                <a href="#authors">AUTHORS</a>
+                <svg
+                  class="svg-inline--fa fa-star"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="star"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 576 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                  ></path></svg
+                ><!-- <i class="fa-solid fa-star text-xs text-gray-300 ml-4"></i> Font Awesome fontawesome.com -->
+              </li>
+
+              <li>
+                <a href="#community">COMMUNITY</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hidden xl:block">
+            <a class="flex subscribe" href="#community"> SUBSCRIBE NOW</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="hero" class="hero brutal-border-sm">
+      <div class="squares">
+        <div class="square1"></div>
+        <div class="square2"></div>
+        <div class="square3"></div>
+      </div>
+      <div class="container">
+        <div class="main grid-cols-1 lg:grid-cols-2">
+          <div class="hero-text">
+            <div class="trending brutal-shadow-xs brutal-border-sm">
+              <span>🔥 TRENDING NOW</span>
+            </div>
+            <h2>
+              BRUTAL <br />
+              <span class="red">THOUGHTS</span> <br />
+              <span class="blue">BOLD IDEAS</span>
+            </h2>
+            <p class="brutal-shadow-xs brutal-border-sm">
+              Raw, unfiltered content about tech, design, and culture. No
+              sugar-coating, just pure truth that hits different.
+            </p>
+            <div class="buttons">
+              <div class="button1">
+                <button class="start-btn brutal-border">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                      fill="currentColor"
+                      d="M192 384L88.5 384C63.6 384 48.3 356.9 61.1 335.5L114 247.3C122.7 232.8 138.3 224 155.2 224L250.2 224C326.3 95.1 439.8 88.6 515.7 99.7C528.5 101.6 538.5 111.6 540.3 124.3C551.4 200.2 544.9 313.7 416 389.8L416 484.8C416 501.7 407.2 517.3 392.7 526L304.5 578.9C283.2 591.7 256 576.3 256 551.5L256 448C256 412.7 227.3 384 192 384L191.9 384zM464 224C464 197.5 442.5 176 416 176C389.5 176 368 197.5 368 224C368 250.5 389.5 272 416 272C442.5 272 464 250.5 464 224z"
+                    /></svg
+                  >START READING
+                </button>
+              </div>
+              <div class="button2">
+                <button class="watch-btn brutal-border">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+                    <path
+                      fill="currentColor"
+                      d="M187.2 100.9C174.8 94.1 159.8 94.4 147.6 101.6C135.4 108.8 128 121.9 128 136L128 504C128 518.1 135.5 531.2 147.6 538.4C159.7 545.6 174.8 545.9 187.2 539.1L523.2 355.1C536 348.1 544 334.6 544 320C544 305.4 536 291.9 523.2 284.9L187.2 100.9z"
+                    />
+                  </svg>
+                  WATCH INTRO
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="hero-img">
+            <div
+              class="image brutal-shadow brutal-border hover-lift lg:rotate-2"
+            >
+              <img src="./../images/hero-img.png" alt="" />
+            </div>
+            <div class="featured brutal-border-sm brutal-shadow-xs">
+              <span>FEATURED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="latestArticles" class="latest-articles brutal-border-sm">
+      <div class="container">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap32">
+          <div class="lg:col-span-2">
+            <div class="title">
+              <h3>LATEST ARTICLES</h3>
+              <div
+                class="fresh hidden sm:block brutal-border-sm brutal-shadow-xs"
+              >
+                <span>🔥 FRESH CONTENT</span>
+              </div>
+            </div>
+            <div class="articles">
+              <div
+                class="brutal-border brutal-shadow-sm hover-lift article article1 margin-b-28"
+              >
+                <div class="content lg:flex-row">
+                  <div class="article-img">
+                    <img
+                      src="./../images/user-engagement-2.jpg"
+                      alt=""
+                      class="brutal-border-sm"
+                    />
+                    <div class="new brutal-border-sm">NEW</div>
+                  </div>
+                  <div class="article-text">
+                    <div class="tech brutal-border-sm brutal-shadow-xs">
+                      TECH
+                    </div>
+                    <h4>Why Your Website Needs More Edge</h4>
+                    <p>
+                      Exploring the psychological impact of bold, unapologetic
+                      design choices on user engagement and brand perception in
+                      the digital age.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-8 info"
+                    >
+                      <span class="flex xl:col-span-3 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+                          /></svg
+                        >BY ALEX BRUTAL
+                      </span>
+                      <span class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"
+                          /></svg
+                        >JAN 8, 2025
+                      </span>
+                      <span class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"
+                          /></svg
+                        >5 MIN READ
+                      </span>
+                      <span class="flex items-center red likes">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"
+                          /></svg
+                        >127
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="brutal-border brutal-shadow-sm hover-lift article article2 margin-b-28"
+              >
+                <div class="content lg:flex-row">
+                  <div class="article-img">
+                    <img
+                      src="./../images/guide-to-typography.avif"
+                      alt=""
+                      class="brutal-border-sm"
+                    />
+                    <div class="hot brutal-border-sm">HOT</div>
+                  </div>
+                  <div class="article-text">
+                    <div class="design brutal-border-sm brutal-shadow-xs">
+                      DESIGN
+                    </div>
+                    <h4>Typography That Screams</h4>
+                    <p>
+                      How to choose and implement bold typography that commands
+                      attention without sacrificing readability or user
+                      experience.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-8 info"
+                    >
+                      <div class="flex xl:col-span-3 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+                          /></svg
+                        >BY Arnold Reeve
+                      </div>
+                      <div class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"
+                          /></svg
+                        >JAN 6, 2025
+                      </div>
+                      <div class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"
+                          /></svg
+                        >7 MIN READ
+                      </div>
+                      <div class="flex items-center red likes">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"
+                          /></svg
+                        >89
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="brutal-border brutal-shadow-sm hover-lift article article3"
+              >
+                <div class="content lg:flex-row">
+                  <div class="article-img">
+                    <img
+                      src="./../images/anti-instagram.jpg"
+                      alt=""
+                      class="brutal-border-sm"
+                    />
+                    <div class="viral brutal-border-sm">VIRAL</div>
+                  </div>
+                  <div class="article-text">
+                    <div class="culture brutal-border-sm brutal-shadow-xs">
+                      CULTURE
+                    </div>
+                    <h4>The Anti-Instagram Movement</h4>
+                    <p>
+                      Young creators are abandoning polished feeds for raw,
+                      authentic content that celebrates imperfection and real
+                      human connection.
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-8 info"
+                    >
+                      <div class="flex xl:col-span-3 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 312C386.3 312 440 258.3 440 192C440 125.7 386.3 72 320 72C253.7 72 200 125.7 200 192C200 258.3 253.7 312 320 312zM290.3 368C191.8 368 112 447.8 112 546.3C112 562.7 125.3 576 141.7 576L498.3 576C514.7 576 528 562.7 528 546.3C528 447.8 448.2 368 349.7 368L290.3 368z"
+                          /></svg
+                        >BY MIKE EDGE
+                      </div>
+                      <div class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M224 64C206.3 64 192 78.3 192 96L192 128L160 128C124.7 128 96 156.7 96 192L96 240L544 240L544 192C544 156.7 515.3 128 480 128L448 128L448 96C448 78.3 433.7 64 416 64C398.3 64 384 78.3 384 96L384 128L256 128L256 96C256 78.3 241.7 64 224 64zM96 288L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 288L96 288z"
+                          /></svg
+                        >JAN 4, 2025
+                      </div>
+                      <div class="flex xl:col-span-2 items-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            d="M320 64C461.4 64 576 178.6 576 320C576 461.4 461.4 576 320 576C178.6 576 64 461.4 64 320C64 178.6 178.6 64 320 64zM296 184L296 320C296 328 300 335.5 306.7 340L402.7 404C413.7 411.4 428.6 408.4 436 397.3C443.4 386.2 440.4 371.4 429.3 364L344 307.2L344 184C344 170.7 333.3 160 320 160C306.7 160 296 170.7 296 184z"
+                          /></svg
+                        >4 MIN READ
+                      </div>
+                      <div class="flex items-center red likes">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 640 640"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M305 151.1L320 171.8L335 151.1C360 116.5 400.2 96 442.9 96C516.4 96 576 155.6 576 229.1L576 231.7C576 343.9 436.1 474.2 363.1 529.9C350.7 539.3 335.5 544 320 544C304.5 544 289.2 539.4 276.9 529.9C203.9 474.2 64 343.9 64 231.7L64 229.1C64 155.6 123.6 96 197.1 96C239.8 96 280 116.5 305 151.1z"
+                          /></svg
+                        >203
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button">
+              <button class="hover:translate-1.5">+ LOAD MORE ARTICLES</button>
+            </div>
+          </div>
+          <div class="lg:col-span-1">
+            <div class="sticky">
+              <div class="trending brutal-border brutal-shadow">
+                <h4>TRENDING NOW</h4>
+                <div class="ranking">
+                  <div class="rank1">
+                    <span class="red">01</span>
+                    <div>
+                      <h5>The Death of Minimalism</h5>
+                      <p>12.5K reads • 🔥 Trending</p>
+                    </div>
+                  </div>
+                  <div class="rank2">
+                    <span class="blue">02</span>
+                    <div>
+                      <h5>Chaos as a Design System</h5>
+                      <p>8.2K reads • ⚡ Rising</p>
+                    </div>
+                  </div>
+                  <div class="rank3">
+                    <span class="purple">03</span>
+                    <div>
+                      <h5>Digital Rebellion</h5>
+                      <p>6.7K reads • 💥 Hot</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="categories brutal-border brutal-shadow">
+                <h4></h4>
+                <div>
+                  <span class="brutal-border-sm hover-lift category category1">
+                    TECH (24)</span
+                  >
+                  <span class="brutal-border-sm hover-lift category category2">
+                    DESIGN (18)
+                  </span>
+                  <span class="brutal-border-sm hover-lift category category3">
+                    CULTURE (15)
+                  </span>
+                  <span class="brutal-border-sm hover-lift category category4"
+                    >OPINION (12)
+                  </span>
+                  <span class="brutal-border-sm hover-lift category category5"
+                    >TUTORIALS (9)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="authors" class="authors brutal-border-sm">
+      <div class="squares">
+        <div class="square1"></div>
+        <div class="square2"></div>
+      </div>
+      <div class="container">
+        <div class="title">
+          <h3>MEET THE AUTHORS</h3>
+          <p>The rebels behind the brutal truth</p>
+          <div class="line"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
+          <div class="author1 author brutal-border brutal-shadow hover-lift">
+            <div class="author-img">
+              <img
+                class="brutal-border"
+                src="./../images/avatar-1.jpg"
+                alt=""
+              />
+              <div class="founder brutal-border-sm">FOUNDER</div>
+            </div>
+            <h4>ALEX BRUTAL</h4>
+            <span> Tech Critic & Design Rebel </span>
+            <p>
+              Destroying conventional wisdom one article at a time. 10+ years
+              fighting the good fight against boring design and corporate BS.
+            </p>
+            <ul>
+              <li class="brutal-border-sm hover-lift">
+                <a href="https://twitter.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-twitter text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="twitter"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-twitter text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li class="brutal-border-sm hover-lift">
+                <a href="https://linkedin.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-linkedin text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-linkedin text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li class="brutal-border-sm hover-lift">
+                <a href="https://instagram.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-instagram text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="author2 author brutal-border brutal-shadow hover-lift">
+            <div class="author-img">
+              <img
+                class="brutal-border"
+                src="./../images/avatar-2.jpg"
+                alt=""
+              />
+              <div class="lead brutal-border-sm">LEAD</div>
+            </div>
+            <h4>Arnold Reeve</h4>
+            <span> UX Anarchist & Visual Provocateur </span>
+            <p>
+              Challenging design norms and creating chaos that actually works.
+              Former corporate designer turned rebel with a cause.
+            </p>
+            <ul>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-[#1DA1F2] transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://twitter.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-twitter text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="twitter"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-twitter text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-blue-600 transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://linkedin.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-linkedin text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-linkedin text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-pink-600 transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://instagram.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-instagram text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-instagram text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="author3 author brutal-border brutal-shadow hover-lift">
+            <div class="author-img">
+              <img
+                class="brutal-border"
+                src="./../images/avatar-3.jpg"
+                alt=""
+              />
+              <div class="viral brutal-border-sm">VIRAL</div>
+            </div>
+            <h4>MIKE EDGE</h4>
+            <span> Cultural Critic & Trend Destroyer </span>
+            <p>
+              Dissecting digital culture and exposing the truth behind viral
+              trends. No filter, just facts that cut through the noise.
+            </p>
+            <ul>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-[#1DA1F2] transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://twitter.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-twitter text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="twitter"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-twitter text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-blue-600 transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://linkedin.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-linkedin text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="linkedin"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-linkedin text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+              <li
+                class="w-12 h-12 bg-black text-white flex items-center justify-center brutal-border-sm hover:bg-pink-600 transition-all cursor-pointer hover-lift"
+              >
+                <a href="https://instagram.com" target="_blank">
+                  <svg
+                    class="svg-inline--fa fa-instagram text-lg"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="instagram"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-instagram text-lg"></i> Font Awesome fontawesome.com -->
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="community" class="community brutal-border-sm">
+      <div class="container">
+        <div class="title">
+          <h3>JOIN THE REBELLION</h3>
+          <p>Where rebels gather to change the digital world</p>
+          <div class="line"></div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+          <div>
+            <h4>BECOME PART OF SOMETHING BIGGER</h4>
+            <p class="brutal-border-sm brutal-shadow-xs invitation">
+              Join thousands of designers, developers, and digital rebels who
+              are tired of the same old boring content. Our community is where
+              raw ideas meet bold execution and real change happens.
+            </p>
+            <div class="benefits">
+              <div class="benefit">
+                <div class="symbol symbol1 brutal-border-sm">
+                  <svg
+                    class="svg-inline--fa fa-check"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="check"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 448 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                    ></path></svg
+                  ><!-- <i class="fa-solid fa-check text-white text-xl"></i> Font Awesome fontawesome.com -->
+                </div>
+                <span
+                  >Weekly brutal insights newsletter with exclusive
+                  content</span
+                >
+              </div>
+              <div class="benefit">
+                <div class="symbol symbol2 brutal-border-sm">
+                  <svg
+                    class="svg-inline--fa fa-discord"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fab"
+                    data-icon="discord"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 640 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M524.531,69.836a1.5,1.5,0,0,0-.764-.7A485.065,485.065,0,0,0,404.081,32.03a1.816,1.816,0,0,0-1.923.91,337.461,337.461,0,0,0-14.9,30.6,447.848,447.848,0,0,0-134.426,0,309.541,309.541,0,0,0-15.135-30.6,1.89,1.89,0,0,0-1.924-.91A483.689,483.689,0,0,0,116.085,69.137a1.712,1.712,0,0,0-.788.676C39.068,183.651,18.186,294.69,28.43,404.354a2.016,2.016,0,0,0,.765,1.375A487.666,487.666,0,0,0,176.02,479.918a1.9,1.9,0,0,0,2.063-.676A348.2,348.2,0,0,0,208.12,430.4a1.86,1.86,0,0,0-1.019-2.588,321.173,321.173,0,0,1-45.868-21.853,1.885,1.885,0,0,1-.185-3.126c3.082-2.309,6.166-4.711,9.109-7.137a1.819,1.819,0,0,1,1.9-.256c96.229,43.917,200.41,43.917,295.5,0a1.812,1.812,0,0,1,1.924.233c2.944,2.426,6.027,4.851,9.132,7.16a1.884,1.884,0,0,1-.162,3.126,301.407,301.407,0,0,1-45.89,21.83,1.875,1.875,0,0,0-1,2.611,391.055,391.055,0,0,0,30.014,48.815,1.864,1.864,0,0,0,2.063.7A486.048,486.048,0,0,0,610.7,405.729a1.882,1.882,0,0,0,.765-1.352C623.729,277.594,590.933,167.465,524.531,69.836ZM222.491,337.58c-28.972,0-52.844-26.587-52.844-59.239S193.056,219.1,222.491,219.1c29.665,0,53.306,26.82,52.843,59.239C275.334,310.993,251.924,337.58,222.491,337.58Zm195.38,0c-28.971,0-52.843-26.587-52.843-59.239S388.437,219.1,417.871,219.1c29.667,0,53.307,26.82,52.844,59.239C470.715,310.993,447.538,337.58,417.871,337.58Z"
+                    ></path></svg
+                  ><!-- <i class="fa-brands fa-discord text-white text-xl"></i> Font Awesome fontawesome.com -->
+                </div>
+                <span
+                  >Exclusive community Discord access for real-time
+                  discussions</span
+                >
+              </div>
+              <div class="benefit">
+                <div class="symbol symbol3 brutal-border-sm">
+                  <svg
+                    class="svg-inline--fa fa-star"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="star"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 576 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                    ></path></svg
+                  ><!-- <i class="fa-solid fa-star text-white text-xl"></i> Font Awesome fontawesome.com -->
+                </div>
+                <span>Early access to new articles before they go public</span>
+              </div>
+              <div class="benefit">
+                <div class="symbol symbol4 brutal-border-sm">
+                  <svg
+                    class="svg-inline--fa fa-pen"
+                    aria-hidden="true"
+                    focusable="false"
+                    data-prefix="fas"
+                    data-icon="pen"
+                    role="img"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                    data-fa-i2svg=""
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"
+                    ></path></svg
+                  ><!-- <i class="fa-solid fa-pen text-white text-xl"></i> Font Awesome fontawesome.com -->
+                </div>
+                <span>Submit your own brutal takes and get featured</span>
+              </div>
+            </div>
+            <div class="button">
+              <button>
+                <svg
+                  class="svg-inline--fa fa-rocket mr-3"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="rocket"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M156.6 384.9L125.7 354c-8.5-8.5-11.5-20.8-7.7-32.2c3-8.9 7-20.5 11.8-33.8L24 288c-8.6 0-16.6-4.6-20.9-12.1s-4.2-16.7 .2-24.1l52.5-88.5c13-21.9 36.5-35.3 61.9-35.3l82.3 0c2.4-4 4.8-7.7 7.2-11.3C289.1-4.1 411.1-8.1 483.9 5.3c11.6 2.1 20.6 11.2 22.8 22.8c13.4 72.9 9.3 194.8-111.4 276.7c-3.5 2.4-7.3 4.8-11.3 7.2v82.3c0 25.4-13.4 49-35.3 61.9l-88.5 52.5c-7.4 4.4-16.6 4.5-24.1 .2s-12.1-12.2-12.1-20.9V380.8c-14.1 4.9-26.4 8.9-35.7 11.9c-11.2 3.6-23.4 .5-31.8-7.8zM384 168a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+                  ></path></svg
+                >JOIN NOW - IT'S FREE
+              </button>
+            </div>
+          </div>
+          <div class="comments brutal-border brutal-shadow">
+            <h5>WHAT REBELS ARE SAYING</h5>
+            <div>
+              <div class="comment comment1 brutal-border-sm">
+                <p>
+                  "Finally, a blog that tells it like it is. No corporate BS,
+                  just pure truth about what's really happening in tech. This is
+                  the wake-up call our industry needed."
+                </p>
+                <div class="info">
+                  <img
+                    class="brutal-border-sm"
+                    src="./../images/avatar-4.avif"
+                    alt=""
+                  />
+                  <div>
+                    <div class="name">Mark T.</div>
+                    <div class="position">Senior Designer at Meta</div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment comment2 brutal-border-sm">
+                <p>
+                  "The UX Review changed how I think about design. It's raw,
+                  honest, and exactly what our industry needs. Every article
+                  challenges my assumptions."
+                </p>
+                <div class="info">
+                  <img
+                    class="brutal-border-sm"
+                    src="./../images/avatar-5.jpg"
+                    alt=""
+                  />
+                  <div>
+                    <div class="name">ALEX M.</div>
+                    <div class="position">Lead Developer at Stripe</div>
+                  </div>
+                </div>
+              </div>
+              <div class="comment comment3 brutal-border-sm">
+                <p>
+                  "The most authentic voice in digital culture. Every article
+                  challenges my assumptions and makes me think differently about
+                  the work I do."
+                </p>
+                <div class="info">
+                  <img
+                    class="brutal-border-sm"
+                    src="./../images/avatar-6.avif"
+                    alt=""
+                  />
+                  <div>
+                    <div class="name">James K.</div>
+                    <div class="position">Creative Director at Adobe</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5">
+          <div class="message md:col-span-4 lg:col-span-2">
+            <div class="title">
+              <div class="symbol brutal-border-sm">
+                <svg
+                  class="svg-inline--fa fa-pen-nib text-black text-2xl"
+                  aria-hidden="true"
+                  focusable="false"
+                  data-prefix="fas"
+                  data-icon="pen-nib"
+                  role="img"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  data-fa-i2svg=""
+                >
+                  <path
+                    fill="currentColor"
+                    d="M368.4 18.3L312.7 74.1 437.9 199.3l55.7-55.7c21.9-21.9 21.9-57.3 0-79.2L447.6 18.3c-21.9-21.9-57.3-21.9-79.2 0zM288 94.6l-9.2 2.8L134.7 140.6c-19.9 6-35.7 21.2-42.3 41L3.8 445.8c-3.8 11.3-1 23.9 7.3 32.4L164.7 324.7c-3-6.3-4.7-13.3-4.7-20.7c0-26.5 21.5-48 48-48s48 21.5 48 48s-21.5 48-48 48c-7.4 0-14.4-1.7-20.7-4.7L33.7 500.9c8.6 8.3 21.1 11.2 32.4 7.3l264.3-88.6c19.7-6.6 35-22.4 41-42.3l43.2-144.1 2.8-9.2L288 94.6z"
+                  ></path></svg
+                ><!-- <i class="fa-solid fa-pen-nib text-black text-2xl"></i> Font Awesome fontawesome.com -->
+              </div>
+              <h1>THE UX REVIEW</h1>
+            </div>
+            <p>
+              Raw, unfiltered thoughts on tech, design, and digital culture. No
+              compromise, no corporate speak, just brutal truth that matters.
+            </p>
+          </div>
+          <div class="categories md:col-span-1 lg:col-span-1">
+            <h4>CATEGORIES</h4>
+            <ul>
+              <li><a href="#"> TECH </a></li>
+              <li><a href="#">DESIGN</a></li>
+              <li><a href="#">CULTURE</a></li>
+              <li><a href="#">OPINION</a></li>
+              <li><a href="#">TUTORIALS</a></li>
+            </ul>
+          </div>
+          <div class="newsletter md:col-span-3 lg:col-span-2">
+            <h4>NEWSLETTER</h4>
+            <p>
+              Get brutal insights delivered weekly. No spam, just truth that
+              cuts through the noise.
+            </p>
+            <div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="YOUR EMAIL ADDRESS"
+              /><button class="brutal-border">SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
+        <div class="credits">
+          <div class="flex flex-col xl:flex-row">
+            <p>© 2025 The UX Review. ALL RIGHTS RESERVED. STAY BRUTAL.</p>
+            <div class="terms">
+              <a class="mr-32" href="#">PRIVACY POLICY</a>
+              <a class="mr-32" href="#">TERMS OF USE</a>
+              <a href="#">COOKIE POLICY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
